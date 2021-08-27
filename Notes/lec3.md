@@ -9,7 +9,7 @@ fontsize: 12pt
 numbersections: true
 ---
 
-# Lecture 3 ()
+# Lecture 3 (Introduction cotd.)
 
 ## Acting Rationally - Rational Agent
 1. A rational agent maximises its expected utility

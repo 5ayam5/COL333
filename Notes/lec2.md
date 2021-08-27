@@ -64,7 +64,7 @@ For AI to pass the **Turing Test**, the following is needed:
     i. Tested using introspection and psychological experiments
 2. Aim of an AI system:
     i. To match the cognitive modeol of a human
-    i. 
+    i. Inform our understanding of human reasoning
 
 ## Thinking and Acting Rationally
 1. Understanding the thought process
