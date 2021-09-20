@@ -24,7 +24,7 @@ numbersections: true
 1. $S$, the state space
 2. $s_0 \in S$, the initial start state
 3. $G \subset S$, the set of end states (is usally dynamic and hence defined by a *goal test*)
-4. $A: $S \times R \to S$, the successor function (R can be any set depending on the "algorithm")
+4. $A: S \times R \to S$, the successor function (R can be any set depending on the "algorithm")
 
 ## Modelling Assumptions
 1. Agent knows current state

@@ -35,6 +35,7 @@ function IterativeDeepeningSearch(problem):
 2. Space complexity: $O(bd)$
 3. It is complete
 4. Optimal solution is obtained
+5. Asymptotic ratio wrt DLS is $\displaystyle\frac{b+1}{b-1}$
 
 ## Bi-Directional Search
 1. Spread out from both the start and goal states, find intersection

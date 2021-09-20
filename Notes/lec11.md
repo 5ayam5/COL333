@@ -28,9 +28,31 @@ function Backtracking(assignment, csp):
     return failure
 ```
 
-## Forward Checking
+### Inference - Forward Checking
 Remove values of neighbours which are inconsistent with current assignment of node
 
 ## Arc Consistency
-Arc is consistent if for any assignment for the source variable, there exists a valid assignment for the sink variable. The domain is modified accordingly
+1. Arc is consistent iff for any assignment for the source variable, there exists a valid assignment for the sink variable
+1. The domain is modified accordingly by removing inconsistent values from the source
 
+### AC-3 Algorithm for Enforcing Arc Consistency
+```python
+def AC-3(csp):
+    queue = queue of all arcs in csp
+    while queue is not empty:
+        (Xi, Xj) = pop(queue)
+        if revise(csp, Xi, Xj):
+            if |Di| == 0:
+                return False
+            for each Xk in Xi.neighbours \ {Xj}:
+                add (Xk, Xi) to queue
+    return True
+```
+Complexity of the algorithm is $O(n^2 d^3)$. Backtracking with inference can also use `AC-3` algorithm
+
+### Limitations
+We cannot determine if a solution exists until we run a traversal on the graph, even after enforcing consistency
+
+## K-Consistency
+1. For each $k$ nodes, any consistent assignment to $k-1$ can be extended to the $k^{th}$ node
+1. Arc consistency is special case for $k=2$

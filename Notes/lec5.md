@@ -58,6 +58,7 @@ function GraphSearch(problem, strategy):
         - Space complexity = $O(b^d)$, very huge
 2. Depth First Search:
     i. Expand the deepest unexplored node
+    i. Frontier is a stack
     i. Analysis
         - Complete
         - Not optimal (finds the leftmost solution)

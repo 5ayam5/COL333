@@ -51,6 +51,7 @@ numbersections: true
 
 ### Turing Test (Acting Humanly)
 For AI to pass the **Turing Test**, the following is needed:
+
 1. NLP
 2. Knowledge representation
 3. Automated reasoning
