@@ -58,7 +58,8 @@ $$Q(a) = \mathbb{E}[R(a)] \approx \hat{Q}_t(a) = \frac{1}{N_t(a)}\sum_{t=1}^T r_
 
 ## Linear Value Functions
 $$V(s) = \sum_{i=1}^n w_i f_i(s)$$
-$$Q(s, a) = \sum_{i=1}^n w_1 f_i(s, a)$$
+$$Q(s, a) = \sum_{i=1}^n w_i f_i(s, a)$$
+
 1. The goal of Q-learning is to now estimate these weights from experiences
 1. Once the weights are learnt, the resulting Q-value will be close to the actual Q-value
 1. For this to work efficiently, we need substantial states
